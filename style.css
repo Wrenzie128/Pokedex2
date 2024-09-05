@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("pokemonbackground.png");
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body covers the viewport height */
+}
+
+
+h1, b {
+    font-size: 3rem; /* Responsive font sizing */
+    font-family: serif;
+    text-align: center;
+    color: #f7de3f;
+    margin-bottom: 20px; /* Adds spacing below headings */
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Pokémon Card Container */
+.pokemon-container {
+    background-color: rgba(99, 74, 5, 0.55);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pokemon-container:hover {
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+}
+
+/* Pokémon Card */
+.card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.8);
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    object-fit: contain;
+}
+
+.card ul {
+    list-style: none; /* Removes default list styling */
+    text-align: center;
+    font-weight: bold;
+}
+
+.pokemon-id {
+    font-size: 0.75rem; /* Adjusted for readability */
+    color: red;
+    font-weight: bold;
+}
+
+.pokemon-name {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+/* Pokémon Type Styles */
+.pokemon-type {
+    font-size: 0.85rem; /* Adjusted for readability */
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 0; /* Adds spacing between types */
+    text-align: center;
+    color: #fff;
+}
+
+.Electric {
+    background-color: #F7D02C;
+}
+
+.Ground {
+    background-color: #6B4728;
+}
+
+.Poison {
+    background-color: #A33EA1;
+}
+
+.Grass {
+    background-color: #7AC74C;
+}
+
+.Fire {
+    background-color: #EE8130;
+}
+
+.Water {
+    background-color: #6390F0;
+}
+
+.Fairy {
+    background-color: #D685AD;
+}
+
+.Normal {
+    background-color: #A8A77A;
+}
+
+.Flying {
+    background: linear-gradient(180deg, #A98FF3 50%, #F5F5F5 50%);
+}
+
+.Bug {
+    background-color: #A6B91A;
+}
